@@ -1,0 +1,23 @@
+
+
+<div class="back centralizado">
+    <button class="sxr-qr-code-button centralizado backgroundImage" style='background-image: url("./assets/novo/botao.png");' 
+    (click)="irPara()"
+    
+    *ngIf="celular==false" [ngClass]="{'botao-pc': celular==false}"  >
+        
+        
+    </button>
+    
+    <model-viewer  ar_preferred id="model-viewer" reveal="manual" *ngIf="celular==true" (click)="save()"
+    environment-image="https://simple-xr-dashboard.s3.sa-east-1.amazonaws.com/models-3d/scene3.hdr" exposure="1.1"
+    camera-controls auto-rotate [src]="glb"  
+     ar ar-modes="scene-viewer quick-look webxr" camera-controls alt="A 3D model car" 
+     [ios-src]="usdz" 
+     >
+        <button slot="ar-button" class="sxr-qr-code-button centralizado backgroundImage" style='background-image: url("./assets/novo/botao.png");'>
+            
+            
+        </button>
+    </model-viewer >
+</div>

@@ -1,0 +1,31 @@
+.background{
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+    width: 100%;
+
+}
+.botao{
+
+    width: 100%;
+
+}
+.conteudo{
+    width: 100%;
+    height: 90vh;
+}
+.conteudo img{
+    width: 25%;
+    max-width: 100px;
+}
+.btnInicial{
+    width: 55%;
+    height: 50px;
+    border: 0px;
+    background-color: transparent;
+    background-size: 55%;
+    max-width: 200px;
+    min-width: 100px;
+}
+.rodape img{
+    width: 25%;
+}

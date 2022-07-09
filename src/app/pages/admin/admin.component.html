@@ -1,0 +1,19 @@
+<div class="back centralizado">
+    <div class="conteudo" *ngIf="model" >
+        <p>Modelo: {{model._id}}</p>
+        <p>Nome: {{model. nome}}</p>
+        <a [href]="model.link">Link: {{model.link}}</a>
+        <p>Cliques: {{model.clique}}</p>
+        <p>Último Acesso: {{model.ultimoClique | date :'dd/MM/yyyy hh:mm'}}</p>
+
+        <h3>Sites</h3>
+        <div class="cadaSite" *ngFor="let item of site" >
+            <p>Nome: {{item.nome}}</p>
+            <p>Cliques: {{item.clique}}</p>
+            <p>Tipo: {{item.tipo}}</p>
+
+            <a [href]="model.link">Link: {{item.url}}</a>
+            <p>Último Acesso: {{item.ultimoClique | date :'dd/MM/yyyy hh:mm'}}</p>
+        </div>
+    </div>
+</div>

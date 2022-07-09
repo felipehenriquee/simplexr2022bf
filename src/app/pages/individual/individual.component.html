@@ -1,0 +1,18 @@
+<div class="centralizado back"> 
+    <button *ngIf="!abreTutorial" (click)="abreTutorial = true">Ver em seu ambiente</button>
+    <div class="tutorial" *ngIf="abreTutorial">
+        <button class="btnFechar"  (click)="abreTutorial = false">X</button>
+        <app-tutorial-xr  ></app-tutorial-xr>
+    </div>
+
+</div>
+
+
+
+    
+
+    
+
+
+
+
